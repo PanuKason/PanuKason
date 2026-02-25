@@ -1,6 +1,6 @@
 #  ___การจัดการช่องโหว่ Local File Inclusion (LFI)___ 
 ## เป้าหมาย: ไฟล์ rlfi.php ในระบบ bWAPP ระดับความยาก: ปานกลาง (Medium)
-![This is an alt text.](/img/img2/63.png)
+![This is an alt text.](i1.png)
 
 === 
 
