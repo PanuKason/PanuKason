@@ -18,7 +18,7 @@
 ### ปัญหาอยู่ที่บรรทัดไหน?
 
 จากการสแกนด้วยเครื่องมือ RIPS พบว่าโค้ดมีการเขียนที่ไม่ปลอดภัย โดย RIPS แจ้งเตือนดังนี้
-![This is an alt text.](/img/img2/63.png)
+![This is an alt text.](i2.png)
 
 #### ผลการสแกน (RIPS Output)
 > Userinput reaches sensitive sink
@@ -73,10 +73,10 @@ switch($_GET["language"]) {
 }
 ```
 # โค้ดที่ยังไม่แก้ไข
-![This is an alt text.](/img/img2/64.jpg)
+![This is an alt text.](i3.jpg)
 
 # โค้ดที่แก้ไขแล้ว
-![This is an alt text.](/img/img2/65.jpg)
+![This is an alt text.](i4.jpg)
 ---
 
 # 5. การตรวจสอบหลังแก้ไข (Verification)
@@ -85,17 +85,17 @@ switch($_GET["language"]) {
 ## 5.1 ตรวจสอบความปลอดภัย (Security Check)
 ทดสอบยิง Payload เดิม ../../../../etc/passwd อีกครั้ง
 + ผลลัพธ์: ระบบแสดงข้อความ "Access Denied" สีแดง (ตามที่เราเขียนดักไว้ใน default) ไม่สามารถเข้าถึงไฟล์ความลับได้อีกต่อไป
-![This is an alt text.](/img/img2/66.png)
+![This is an alt text.](i5.png)
 
 ## 5.2 ตรวจสอบคุณภาพโค้ด (RIPS Re-scan)
 สแกนไฟล์ที่แก้แล้วด้วย RIPS อีกครั้ง
 + ผลลัพธ์: RIPS ขึ้นสถานะ "No vulnerabilities found" (ไม่พบช่องโหว่) แถบสีแดง/เหลืองหายไปทั้งหมด ยืนยันว่าโค้ดบรรทัดที่ 29 ถึง 94 ปลอดภัยแล้ว
-![This is an alt text.](/img/img2/68.png)
+![This is an alt text.](i6.png)
 
 ## 5.3 ตรวจสอบการใช้งาน (Usability Check)
 ทดสอบเลือกภาษา "English" จากหน้าเว็บปกติ
 + ผลลัพธ์: เว็บไซต์แสดงผลถูกต้อง (ข้อความต้อนรับภาษาอังกฤษ) ผู้ใช้งานทั่วไปยังใช้งานได้ตามปกติ
-![This is an alt text.](/img/img2/67.png)
+![This is an alt text.](i7.png)
 
 ===
 
